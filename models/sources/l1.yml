@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: l1
+    database: dbt_project_db
+    schema: dbt_project_schema_l1
+    tables:
+      - name: customers
+      - name: dates 
+      - name: employees
+      - name: orderitems
+      - name: orders
+      - name: products
+      - name: stores 
+      - name: suppliers
