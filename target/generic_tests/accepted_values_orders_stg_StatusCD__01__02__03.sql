@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="StatusCD", model=get_where_subquery(ref('orders_stg')), values=["01","02","03"]) }}
