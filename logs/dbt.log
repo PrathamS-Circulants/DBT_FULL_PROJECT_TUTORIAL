@@ -12668,3 +12668,579 @@ parsing.
 [0m17:07:59.234842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F26219F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F26219EF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F263562990>]}
 [0m17:07:59.236205 [debug] [MainThread]: Flushing usage events
 [0m17:08:01.173784 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:00:03.962419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EA604D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EB75FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EB75FB10>]}
+
+
+============================== 21:00:03.970122 | 46beae94-a6ba-41c4-a8b3-24d5142bcff7 ==============================
+[0m21:00:03.970122 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:00:03.971111 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\PrathamSingh\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs generate', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Github\\DBT_FULL_PROJECT_TUTORIAL\\logs'}
+[0m21:00:05.159026 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:00:05.159730 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:00:05.160183 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:00:05.442256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '46beae94-a6ba-41c4-a8b3-24d5142bcff7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EAA796E0>]}
+[0m21:00:05.526072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '46beae94-a6ba-41c4-a8b3-24d5142bcff7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293ED8AF460>]}
+[0m21:00:05.527469 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m21:00:06.251480 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m21:00:06.523561 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:00:06.524205 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:00:06.524654 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:00:06.624881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '46beae94-a6ba-41c4-a8b3-24d5142bcff7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293ED8B7350>]}
+[0m21:00:06.676301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '46beae94-a6ba-41c4-a8b3-24d5142bcff7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EDF98140>]}
+[0m21:00:06.677086 [info ] [MainThread]: Found 9 models, 1 analysis, 9 data tests, 1 seed, 8 sources, 907 macros
+[0m21:00:06.677808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '46beae94-a6ba-41c4-a8b3-24d5142bcff7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EE17B690>]}
+[0m21:00:06.681692 [info ] [MainThread]: 
+[0m21:00:06.682203 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m21:00:06.682523 [info ] [MainThread]: 
+[0m21:00:06.683001 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:00:06.689186 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_project_db_dbt_project_schema_l2'
+[0m21:00:06.702124 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_project_db_dbt_project_schema_l3'
+[0m21:00:12.613667 [debug] [ThreadPool]: Using snowflake connection "list_dbt_project_db_dbt_project_schema_l2"
+[0m21:00:12.614234 [debug] [ThreadPool]: Using snowflake connection "list_dbt_project_db_dbt_project_schema_l3"
+[0m21:00:12.614570 [debug] [ThreadPool]: On list_dbt_project_db_dbt_project_schema_l2: show objects in dbt_project_db.dbt_project_schema_l2
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_full_project_tutorial", "target_name": "dev", "connection_name": "list_dbt_project_db_dbt_project_schema_l2"} */;
+[0m21:00:12.614873 [debug] [ThreadPool]: On list_dbt_project_db_dbt_project_schema_l3: show objects in dbt_project_db.dbt_project_schema_l3
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_full_project_tutorial", "target_name": "dev", "connection_name": "list_dbt_project_db_dbt_project_schema_l3"} */;
+[0m21:00:12.615147 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:00:12.615401 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:00:16.127147 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 3.512 seconds
+[0m21:00:16.207200 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.592 seconds
+[0m21:00:16.210949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '46beae94-a6ba-41c4-a8b3-24d5142bcff7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293ED788530>]}
+[0m21:00:16.218554 [debug] [Thread-6 (]: Began running node model.dbt_full_project_tutorial.orderitems_uniq
+[0m21:00:16.219147 [debug] [Thread-5 (]: Began running node model.dbt_full_project_tutorial.orderitems_stg
+[0m21:00:16.219630 [debug] [Thread-7 (]: Began running node model.dbt_full_project_tutorial.orders_stg
+[0m21:00:16.220077 [debug] [Thread-8 (]: Began running node seed.dbt_full_project_tutorial.salestargets
+[0m21:00:16.220530 [debug] [Thread-9 (]: Began running node test.dbt_full_project_tutorial.record_count_check
+[0m21:00:16.221020 [debug] [Thread-2 (]: Began running node model.dbt_full_project_tutorial.customerorder
+[0m21:00:16.221401 [debug] [Thread-4 (]: Began running node model.dbt_full_project_tutorial.employees_stg
+[0m21:00:16.221774 [debug] [Thread-3 (]: Began running node model.dbt_full_project_tutorial.customers_stg
+[0m21:00:16.222325 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.dbt_full_project_tutorial.orderitems_uniq'
+[0m21:00:16.223030 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_full_project_tutorial.orderitems_stg'
+[0m21:00:16.223569 [debug] [Thread-7 (]: Acquiring new snowflake connection 'model.dbt_full_project_tutorial.orders_stg'
+[0m21:00:16.224145 [debug] [Thread-8 (]: Acquiring new snowflake connection 'seed.dbt_full_project_tutorial.salestargets'
+[0m21:00:16.224689 [debug] [Thread-9 (]: Acquiring new snowflake connection 'test.dbt_full_project_tutorial.record_count_check'
+[0m21:00:16.225252 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_full_project_tutorial.customerorder'
+[0m21:00:16.225725 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_full_project_tutorial.employees_stg'
+[0m21:00:16.226305 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_full_project_tutorial.customers_stg'
+[0m21:00:16.226803 [debug] [Thread-6 (]: Began compiling node model.dbt_full_project_tutorial.orderitems_uniq
+[0m21:00:16.227248 [debug] [Thread-5 (]: Began compiling node model.dbt_full_project_tutorial.orderitems_stg
+[0m21:00:16.227703 [debug] [Thread-7 (]: Began compiling node model.dbt_full_project_tutorial.orders_stg
+[0m21:00:16.228150 [debug] [Thread-8 (]: Began compiling node seed.dbt_full_project_tutorial.salestargets
+[0m21:00:16.228662 [debug] [Thread-9 (]: Began compiling node test.dbt_full_project_tutorial.record_count_check
+[0m21:00:16.229114 [debug] [Thread-2 (]: Began compiling node model.dbt_full_project_tutorial.customerorder
+[0m21:00:16.229546 [debug] [Thread-4 (]: Began compiling node model.dbt_full_project_tutorial.employees_stg
+[0m21:00:16.230019 [debug] [Thread-3 (]: Began compiling node model.dbt_full_project_tutorial.customers_stg
+[0m21:00:16.242760 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.orderitems_uniq"
+[0m21:00:16.246390 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.orderitems_stg"
+[0m21:00:16.250288 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.orders_stg"
+[0m21:00:16.252655 [debug] [Thread-8 (]: Began executing node seed.dbt_full_project_tutorial.salestargets
+[0m21:00:16.258935 [debug] [Thread-9 (]: Writing injected SQL for node "test.dbt_full_project_tutorial.record_count_check"
+[0m21:00:16.262546 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.customerorder"
+[0m21:00:16.270202 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.employees_stg"
+[0m21:00:16.273412 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.customers_stg"
+[0m21:00:16.274718 [debug] [Thread-8 (]: Finished running node seed.dbt_full_project_tutorial.salestargets
+[0m21:00:16.275910 [debug] [Thread-7 (]: Began executing node model.dbt_full_project_tutorial.orders_stg
+[0m21:00:16.276709 [debug] [Thread-2 (]: Began executing node model.dbt_full_project_tutorial.customerorder
+[0m21:00:16.277209 [debug] [Thread-5 (]: Began executing node model.dbt_full_project_tutorial.orderitems_stg
+[0m21:00:16.278018 [debug] [Thread-9 (]: Began executing node test.dbt_full_project_tutorial.record_count_check
+[0m21:00:16.278496 [debug] [Thread-6 (]: Began executing node model.dbt_full_project_tutorial.orderitems_uniq
+[0m21:00:16.279166 [debug] [Thread-7 (]: Finished running node model.dbt_full_project_tutorial.orders_stg
+[0m21:00:16.279543 [debug] [Thread-4 (]: Began executing node model.dbt_full_project_tutorial.employees_stg
+[0m21:00:16.280305 [debug] [Thread-2 (]: Finished running node model.dbt_full_project_tutorial.customerorder
+[0m21:00:16.280759 [debug] [Thread-3 (]: Began executing node model.dbt_full_project_tutorial.customers_stg
+[0m21:00:16.281488 [debug] [Thread-5 (]: Finished running node model.dbt_full_project_tutorial.orderitems_stg
+[0m21:00:16.282111 [debug] [Thread-9 (]: Finished running node test.dbt_full_project_tutorial.record_count_check
+[0m21:00:16.282753 [debug] [Thread-6 (]: Finished running node model.dbt_full_project_tutorial.orderitems_uniq
+[0m21:00:16.283527 [debug] [Thread-4 (]: Finished running node model.dbt_full_project_tutorial.employees_stg
+[0m21:00:16.284539 [debug] [Thread-3 (]: Finished running node model.dbt_full_project_tutorial.customers_stg
+[0m21:00:16.285330 [debug] [Thread-11 ]: Began running node test.dbt_full_project_tutorial.not_null_orders_stg_OrderID.966e439dd6
+[0m21:00:16.285835 [debug] [Thread-10 ]: Began running node test.dbt_full_project_tutorial.accepted_values_orders_stg_StatusCD__01__02__03.605ca9bf69
+[0m21:00:16.286239 [debug] [Thread-8 (]: Began running node test.dbt_full_project_tutorial.unique_orders_stg_OrderID.4f816877c4
+[0m21:00:16.287015 [debug] [Thread-2 (]: Began running node test.dbt_full_project_tutorial.dbt_expectations_expect_table_row_count_to_equal_other_table_orderitems_uniq_ref_orders_stg_.1e6f22831d
+[0m21:00:16.287461 [debug] [Thread-7 (]: Began running node model.dbt_full_project_tutorial.orders_fact
+[0m21:00:16.287866 [debug] [Thread-5 (]: Began running node test.dbt_full_project_tutorial.relationships_orderitems_stg_OrderID__OrderID__ref_orders_stg_.7750e60945
+[0m21:00:16.288766 [debug] [Thread-6 (]: Began running node test.dbt_full_project_tutorial.string_not_empty_customers_stg_Email.87b467eddd
+[0m21:00:16.289246 [debug] [Thread-11 ]: Acquiring new snowflake connection 'test.dbt_full_project_tutorial.not_null_orders_stg_OrderID.966e439dd6'
+[0m21:00:16.289637 [debug] [Thread-9 (]: Began running node test.dbt_full_project_tutorial.string_not_empty_employees_stg_JobTitle.25b60c3c6c
+[0m21:00:16.290138 [debug] [Thread-10 ]: Acquiring new snowflake connection 'test.dbt_full_project_tutorial.accepted_values_orders_stg_StatusCD__01__02__03.605ca9bf69'
+[0m21:00:16.290605 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly seed.dbt_full_project_tutorial.salestargets, now test.dbt_full_project_tutorial.unique_orders_stg_OrderID.4f816877c4)
+[0m21:00:16.291041 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_full_project_tutorial.customerorder, now test.dbt_full_project_tutorial.dbt_expectations_expect_table_row_count_to_equal_other_table_orderitems_uniq_ref_orders_stg_.1e6f22831d)
+[0m21:00:16.291503 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.dbt_full_project_tutorial.orders_stg, now model.dbt_full_project_tutorial.orders_fact)
+[0m21:00:16.291933 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_full_project_tutorial.orderitems_stg, now test.dbt_full_project_tutorial.relationships_orderitems_stg_OrderID__OrderID__ref_orders_stg_.7750e60945)
+[0m21:00:16.292377 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly model.dbt_full_project_tutorial.orderitems_uniq, now test.dbt_full_project_tutorial.string_not_empty_customers_stg_Email.87b467eddd)
+[0m21:00:16.292776 [debug] [Thread-11 ]: Began compiling node test.dbt_full_project_tutorial.not_null_orders_stg_OrderID.966e439dd6
+[0m21:00:16.293218 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly test.dbt_full_project_tutorial.record_count_check, now test.dbt_full_project_tutorial.string_not_empty_employees_stg_JobTitle.25b60c3c6c)
+[0m21:00:16.293639 [debug] [Thread-10 ]: Began compiling node test.dbt_full_project_tutorial.accepted_values_orders_stg_StatusCD__01__02__03.605ca9bf69
+[0m21:00:16.294056 [debug] [Thread-8 (]: Began compiling node test.dbt_full_project_tutorial.unique_orders_stg_OrderID.4f816877c4
+[0m21:00:16.294476 [debug] [Thread-2 (]: Began compiling node test.dbt_full_project_tutorial.dbt_expectations_expect_table_row_count_to_equal_other_table_orderitems_uniq_ref_orders_stg_.1e6f22831d
+[0m21:00:16.294914 [debug] [Thread-7 (]: Began compiling node model.dbt_full_project_tutorial.orders_fact
+[0m21:00:16.295344 [debug] [Thread-5 (]: Began compiling node test.dbt_full_project_tutorial.relationships_orderitems_stg_OrderID__OrderID__ref_orders_stg_.7750e60945
+[0m21:00:16.295750 [debug] [Thread-6 (]: Began compiling node test.dbt_full_project_tutorial.string_not_empty_customers_stg_Email.87b467eddd
+[0m21:00:16.304943 [debug] [Thread-11 ]: Writing injected SQL for node "test.dbt_full_project_tutorial.not_null_orders_stg_OrderID.966e439dd6"
+[0m21:00:16.305546 [debug] [Thread-9 (]: Began compiling node test.dbt_full_project_tutorial.string_not_empty_employees_stg_JobTitle.25b60c3c6c
+[0m21:00:16.313020 [debug] [Thread-10 ]: Writing injected SQL for node "test.dbt_full_project_tutorial.accepted_values_orders_stg_StatusCD__01__02__03.605ca9bf69"
+[0m21:00:16.318279 [debug] [Thread-8 (]: Writing injected SQL for node "test.dbt_full_project_tutorial.unique_orders_stg_OrderID.4f816877c4"
+[0m21:00:16.341063 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.orders_fact"
+[0m21:00:16.344150 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_full_project_tutorial.dbt_expectations_expect_table_row_count_to_equal_other_table_orderitems_uniq_ref_orders_stg_.1e6f22831d"
+[0m21:00:16.357433 [debug] [Thread-6 (]: Writing injected SQL for node "test.dbt_full_project_tutorial.string_not_empty_customers_stg_Email.87b467eddd"
+[0m21:00:16.358831 [debug] [Thread-5 (]: Writing injected SQL for node "test.dbt_full_project_tutorial.relationships_orderitems_stg_OrderID__OrderID__ref_orders_stg_.7750e60945"
+[0m21:00:16.362096 [debug] [Thread-9 (]: Writing injected SQL for node "test.dbt_full_project_tutorial.string_not_empty_employees_stg_JobTitle.25b60c3c6c"
+[0m21:00:16.363928 [debug] [Thread-7 (]: Began executing node model.dbt_full_project_tutorial.orders_fact
+[0m21:00:16.365071 [debug] [Thread-7 (]: Finished running node model.dbt_full_project_tutorial.orders_fact
+[0m21:00:16.365672 [debug] [Thread-10 ]: Began executing node test.dbt_full_project_tutorial.accepted_values_orders_stg_StatusCD__01__02__03.605ca9bf69
+[0m21:00:16.366260 [debug] [Thread-11 ]: Began executing node test.dbt_full_project_tutorial.not_null_orders_stg_OrderID.966e439dd6
+[0m21:00:16.367358 [debug] [Thread-10 ]: Finished running node test.dbt_full_project_tutorial.accepted_values_orders_stg_StatusCD__01__02__03.605ca9bf69
+[0m21:00:16.368473 [debug] [Thread-11 ]: Finished running node test.dbt_full_project_tutorial.not_null_orders_stg_OrderID.966e439dd6
+[0m21:00:16.369138 [debug] [Thread-4 (]: Began running node analysis.dbt_full_project_tutorial.StoreRevenue
+[0m21:00:16.369714 [debug] [Thread-2 (]: Began executing node test.dbt_full_project_tutorial.dbt_expectations_expect_table_row_count_to_equal_other_table_orderitems_uniq_ref_orders_stg_.1e6f22831d
+[0m21:00:16.370099 [debug] [Thread-6 (]: Began executing node test.dbt_full_project_tutorial.string_not_empty_customers_stg_Email.87b467eddd
+[0m21:00:16.370544 [debug] [Thread-7 (]: Began running node model.dbt_full_project_tutorial.storeperformance
+[0m21:00:16.370938 [debug] [Thread-5 (]: Began executing node test.dbt_full_project_tutorial.relationships_orderitems_stg_OrderID__OrderID__ref_orders_stg_.7750e60945
+[0m21:00:16.371343 [debug] [Thread-8 (]: Began executing node test.dbt_full_project_tutorial.unique_orders_stg_OrderID.4f816877c4
+[0m21:00:16.371773 [debug] [Thread-10 ]: Began running node test.dbt_full_project_tutorial.orders_fact_negative_revenue_check
+[0m21:00:16.372188 [debug] [Thread-3 (]: Began running node model.dbt_full_project_tutorial.customerrevenue
+[0m21:00:16.372791 [debug] [Thread-9 (]: Began executing node test.dbt_full_project_tutorial.string_not_empty_employees_stg_JobTitle.25b60c3c6c
+[0m21:00:16.373328 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_full_project_tutorial.employees_stg, now analysis.dbt_full_project_tutorial.StoreRevenue)
+[0m21:00:16.374161 [debug] [Thread-2 (]: Finished running node test.dbt_full_project_tutorial.dbt_expectations_expect_table_row_count_to_equal_other_table_orderitems_uniq_ref_orders_stg_.1e6f22831d
+[0m21:00:16.374843 [debug] [Thread-6 (]: Finished running node test.dbt_full_project_tutorial.string_not_empty_customers_stg_Email.87b467eddd
+[0m21:00:16.375295 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.dbt_full_project_tutorial.orders_fact, now model.dbt_full_project_tutorial.storeperformance)
+[0m21:00:16.375991 [debug] [Thread-5 (]: Finished running node test.dbt_full_project_tutorial.relationships_orderitems_stg_OrderID__OrderID__ref_orders_stg_.7750e60945
+[0m21:00:16.376739 [debug] [Thread-8 (]: Finished running node test.dbt_full_project_tutorial.unique_orders_stg_OrderID.4f816877c4
+[0m21:00:16.377231 [debug] [Thread-10 ]: Re-using an available connection from the pool (formerly test.dbt_full_project_tutorial.accepted_values_orders_stg_StatusCD__01__02__03.605ca9bf69, now test.dbt_full_project_tutorial.orders_fact_negative_revenue_check)
+[0m21:00:16.377667 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_full_project_tutorial.customers_stg, now model.dbt_full_project_tutorial.customerrevenue)
+[0m21:00:16.378341 [debug] [Thread-9 (]: Finished running node test.dbt_full_project_tutorial.string_not_empty_employees_stg_JobTitle.25b60c3c6c
+[0m21:00:16.378768 [debug] [Thread-4 (]: Began compiling node analysis.dbt_full_project_tutorial.StoreRevenue
+[0m21:00:16.379503 [debug] [Thread-7 (]: Began compiling node model.dbt_full_project_tutorial.storeperformance
+[0m21:00:16.380180 [debug] [Thread-10 ]: Began compiling node test.dbt_full_project_tutorial.orders_fact_negative_revenue_check
+[0m21:00:16.380630 [debug] [Thread-3 (]: Began compiling node model.dbt_full_project_tutorial.customerrevenue
+[0m21:00:16.383925 [debug] [Thread-4 (]: Writing injected SQL for node "analysis.dbt_full_project_tutorial.StoreRevenue"
+[0m21:00:16.386525 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.storeperformance"
+[0m21:00:16.389156 [debug] [Thread-10 ]: Writing injected SQL for node "test.dbt_full_project_tutorial.orders_fact_negative_revenue_check"
+[0m21:00:16.391379 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_full_project_tutorial.customerrevenue"
+[0m21:00:16.392517 [debug] [Thread-10 ]: Began executing node test.dbt_full_project_tutorial.orders_fact_negative_revenue_check
+[0m21:00:16.393063 [debug] [Thread-7 (]: Began executing node model.dbt_full_project_tutorial.storeperformance
+[0m21:00:16.393917 [debug] [Thread-10 ]: Finished running node test.dbt_full_project_tutorial.orders_fact_negative_revenue_check
+[0m21:00:16.394690 [debug] [Thread-7 (]: Finished running node model.dbt_full_project_tutorial.storeperformance
+[0m21:00:16.395099 [debug] [Thread-3 (]: Began executing node model.dbt_full_project_tutorial.customerrevenue
+[0m21:00:16.395657 [debug] [Thread-4 (]: Began executing node analysis.dbt_full_project_tutorial.StoreRevenue
+[0m21:00:16.396555 [debug] [Thread-3 (]: Finished running node model.dbt_full_project_tutorial.customerrevenue
+[0m21:00:16.397140 [debug] [Thread-4 (]: Finished running node analysis.dbt_full_project_tutorial.StoreRevenue
+[0m21:00:16.399180 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:00:16.399534 [debug] [MainThread]: Connection 'list_dbt_project_db_dbt_project_schema_l2' was left open.
+[0m21:00:16.399865 [debug] [MainThread]: On list_dbt_project_db_dbt_project_schema_l2: Close
+[0m21:00:17.157692 [debug] [MainThread]: Connection 'list_dbt_project_db_dbt_project_schema_l3' was left open.
+[0m21:00:17.158836 [debug] [MainThread]: On list_dbt_project_db_dbt_project_schema_l3: Close
+[0m21:00:17.776425 [debug] [MainThread]: Connection 'test.dbt_full_project_tutorial.string_not_empty_customers_stg_Email.87b467eddd' was properly closed.
+[0m21:00:17.777247 [debug] [MainThread]: Connection 'test.dbt_full_project_tutorial.relationships_orderitems_stg_OrderID__OrderID__ref_orders_stg_.7750e60945' was properly closed.
+[0m21:00:17.777902 [debug] [MainThread]: Connection 'model.dbt_full_project_tutorial.storeperformance' was properly closed.
+[0m21:00:17.778428 [debug] [MainThread]: Connection 'test.dbt_full_project_tutorial.unique_orders_stg_OrderID.4f816877c4' was properly closed.
+[0m21:00:17.778843 [debug] [MainThread]: Connection 'test.dbt_full_project_tutorial.string_not_empty_employees_stg_JobTitle.25b60c3c6c' was properly closed.
+[0m21:00:17.779249 [debug] [MainThread]: Connection 'test.dbt_full_project_tutorial.dbt_expectations_expect_table_row_count_to_equal_other_table_orderitems_uniq_ref_orders_stg_.1e6f22831d' was properly closed.
+[0m21:00:17.779662 [debug] [MainThread]: Connection 'analysis.dbt_full_project_tutorial.StoreRevenue' was properly closed.
+[0m21:00:17.780067 [debug] [MainThread]: Connection 'model.dbt_full_project_tutorial.customerrevenue' was properly closed.
+[0m21:00:17.780462 [debug] [MainThread]: Connection 'test.dbt_full_project_tutorial.not_null_orders_stg_OrderID.966e439dd6' was properly closed.
+[0m21:00:17.780867 [debug] [MainThread]: Connection 'test.dbt_full_project_tutorial.orders_fact_negative_revenue_check' was properly closed.
+[0m21:00:17.786003 [debug] [MainThread]: Command end result
+[0m21:00:17.945304 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Github\DBT_FULL_PROJECT_TUTORIAL\target\manifest.json
+[0m21:00:17.981765 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Github\DBT_FULL_PROJECT_TUTORIAL\target\semantic_manifest.json
+[0m21:00:17.990716 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Github\DBT_FULL_PROJECT_TUTORIAL\target\run_results.json
+[0m21:00:19.133846 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m21:00:19.134249 [info ] [MainThread]: Building catalog
+[0m21:00:19.144614 [debug] [ThreadPool]: Acquiring new snowflake connection 'dbt_project_db.information_schema'
+[0m21:00:19.172273 [debug] [ThreadPool]: Using snowflake connection "dbt_project_db.information_schema"
+[0m21:00:19.172956 [debug] [ThreadPool]: On dbt_project_db.information_schema: with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from dbt_project_db.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'customerorder' and upper("table_name") = upper('customerorder')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'orderitems_uniq' and upper("table_name") = upper('orderitems_uniq')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'customers_stg' and upper("table_name") = upper('customers_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'salestargets' and upper("table_name") = upper('salestargets')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'suppliers' and upper("table_name") = upper('suppliers')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'orders' and upper("table_name") = upper('orders')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'stores' and upper("table_name") = upper('stores')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'customers' and upper("table_name") = upper('customers')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'employees_stg' and upper("table_name") = upper('employees_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'customerrevenue' and upper("table_name") = upper('customerrevenue')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'orders_fact' and upper("table_name") = upper('orders_fact')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'orders_stg' and upper("table_name") = upper('orders_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'dates' and upper("table_name") = upper('dates')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'products' and upper("table_name") = upper('products')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'orderitems' and upper("table_name") = upper('orderitems')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'orderitems_stg' and upper("table_name") = upper('orderitems_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'employees' and upper("table_name") = upper('employees')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'storeperformance' and upper("table_name") = upper('storeperformance')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from dbt_project_db.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'customerorder' and upper("table_name") = upper('customerorder')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'orderitems_uniq' and upper("table_name") = upper('orderitems_uniq')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'customers_stg' and upper("table_name") = upper('customers_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'salestargets' and upper("table_name") = upper('salestargets')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'suppliers' and upper("table_name") = upper('suppliers')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'orders' and upper("table_name") = upper('orders')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'stores' and upper("table_name") = upper('stores')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'customers' and upper("table_name") = upper('customers')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'employees_stg' and upper("table_name") = upper('employees_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'customerrevenue' and upper("table_name") = upper('customerrevenue')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'orders_fact' and upper("table_name") = upper('orders_fact')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'orders_stg' and upper("table_name") = upper('orders_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'dates' and upper("table_name") = upper('dates')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'products' and upper("table_name") = upper('products')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'orderitems' and upper("table_name") = upper('orderitems')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l2' and upper("table_schema") = upper('dbt_project_schema_l2')
+
+                    and 
+    "table_name" ilike 'orderitems_stg' and upper("table_name") = upper('orderitems_stg')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l1' and upper("table_schema") = upper('dbt_project_schema_l1')
+
+                    and 
+    "table_name" ilike 'employees' and upper("table_name") = upper('employees')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'dbt_project_schema_l3' and upper("table_schema") = upper('dbt_project_schema_l3')
+
+                    and 
+    "table_name" ilike 'storeperformance' and upper("table_name") = upper('storeperformance')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_full_project_tutorial", "target_name": "dev", "connection_name": "dbt_project_db.information_schema"} */
+[0m21:00:19.173549 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:00:27.501786 [debug] [ThreadPool]: SQL status: SUCCESS 136 in 8.328 seconds
+[0m21:00:27.683929 [debug] [MainThread]: Wrote artifact CatalogArtifact to D:\Github\DBT_FULL_PROJECT_TUTORIAL\target\catalog.json
+[0m21:00:27.795069 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Github\DBT_FULL_PROJECT_TUTORIAL\target\manifest.json
+[0m21:00:27.801642 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Github\DBT_FULL_PROJECT_TUTORIAL\target\semantic_manifest.json
+[0m21:00:27.802542 [info ] [MainThread]: Catalog written to D:\Github\DBT_FULL_PROJECT_TUTORIAL\target\catalog.json
+[0m21:00:27.804327 [debug] [MainThread]: Command `dbt docs generate` succeeded at 21:00:27.804083 after 24.16 seconds
+[0m21:00:27.805076 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m21:00:27.805647 [debug] [MainThread]: Connection 'dbt_project_db.information_schema' was left open.
+[0m21:00:27.806046 [debug] [MainThread]: On dbt_project_db.information_schema: Close
+[0m21:00:28.423423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EB5C1850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EF9F2E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EF9F3750>]}
+[0m21:00:28.425277 [debug] [MainThread]: Flushing usage events
+[0m21:00:30.360892 [debug] [MainThread]: An error was encountered while trying to flush usage events
