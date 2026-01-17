@@ -13244,3 +13244,14 @@ parsing.
 [0m21:00:28.423423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EB5C1850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EF9F2E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293EF9F3750>]}
 [0m21:00:28.425277 [debug] [MainThread]: Flushing usage events
 [0m21:00:30.360892 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:00:56.945966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAD8264D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAD93B7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAD93B7B10>]}
+
+
+============================== 21:00:56.950220 | 9df7404f-f0a5-4a19-8985-a724572d750d ==============================
+[0m21:00:56.950220 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:00:56.951103 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\PrathamSingh\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'D:\\Github\\DBT_FULL_PROJECT_TUTORIAL\\logs'}
+[0m21:00:57.398248 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:00:57.398706 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:00:57.399011 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:00:57.579336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9df7404f-f0a5-4a19-8985-a724572d750d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAD86D96E0>]}
+[0m21:00:57.643041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9df7404f-f0a5-4a19-8985-a724572d750d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FADB503570>]}
