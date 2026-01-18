@@ -184,3 +184,98 @@
 11:36:47.335673 [debug]: Finished analyzing [  0.04s] model dbt_project_schema_l3.storeperformance [success]
 11:36:47.335686 [info ]: Finished analyzing [  0.44s] (11 nodes, 0 skipped, 0 errors)
 11:36:47.354274 [info ]: Cached model count updated: 9 models (accurate)
+16:34:51.475726 [info ]: Started loading project
+16:34:51.562086 [info ]: Loading ~/.dbt/profiles.yml
+16:34:51.643246 [info ]: Started loading project
+16:34:51.644299 [info ]: Loading ~/.dbt/profiles.yml
+16:34:51.645804 [info ]: Finished loading project [  0.17s]
+16:34:52.599438 [warn ]: dbt1065: Package 'dbt_utils' requires dbt version [>=1.3.0, <2.0.0], but current version is 2.0.0-preview.92. This package may not be compatible with your dbt version.
+16:35:03.162512 [warn ]: dbt1065: Package 'dbt_date' has been moved to 'godatadriven/dbt_date'. Please update your package reference.
+16:35:03.164377 [warn ]: dbt1065: Package 'dbt_date' requires dbt version [>=1.2.0, <2.0.0], but current version is 2.0.0-preview.92. This package may not be compatible with your dbt version.
+16:35:03.204978 [info ]: Finished loading project [ 11.56s]
+16:35:03.210780 [info ]: Started parsing
+16:35:03.496063 [info ]: Finished parsing [  0.29s]
+16:35:03.498747 [info ]: Cached model count updated: 10 models (estimate)
+16:35:03.498770 [info ]: Cached model count updated: 10 models (accurate)
+16:35:03.499999 [info ]: Started scheduling
+16:35:03.502922 [info ]: Finished scheduling [  0.00s]
+16:35:03.813458 [info ]: Started building task graph
+16:35:03.822108 [warn ]: dbt1000: Detected unsafe introspection which may lead to non-deterministic static analysis. To suppress this warning, set static_analysis to 'unsafe' in the nodes' configuration. Learn more: https://docs.getdbt.com/docs/fusion/new-concepts. Nodes: 'model.dbt_full_project_tutorial.hook_test' (this)
+16:35:03.838505 [info ]: Started rendering (12 nodes)
+16:35:03.840050 [info ]: Started seed dbt_project_schema_l3.salestargets
+16:35:03.840785 [debug]: Started rendering seed dbt_project_schema_l3.salestargets
+16:35:03.840842 [info ]: Started model dbt_project_schema_l3.orderitems_uniq
+16:35:03.840851 [debug]: Started rendering model dbt_project_schema_l3.orderitems_uniq
+16:35:03.840866 [info ]: Started model dbt_project_schema_l3.hook_test
+16:35:03.840872 [debug]: Started rendering model dbt_project_schema_l3.hook_test
+16:35:03.840868 [info ]: Finished building task graph [  0.03s]
+16:35:03.840885 [info ]: Started model dbt_project_schema_l3.employees_stg
+16:35:03.840896 [debug]: Started rendering model dbt_project_schema_l3.employees_stg
+16:35:03.840911 [info ]: Started model dbt_project_schema_l2.customers_stg
+16:35:03.840931 [debug]: Started rendering model dbt_project_schema_l2.customers_stg
+16:35:03.840942 [info ]: Started model dbt_project_schema_l3.customerorder
+16:35:03.840947 [debug]: Started rendering model dbt_project_schema_l3.customerorder
+16:35:03.841176 [info ]: Started analysis dbt_project_schema_l3.StoreRevenue
+16:35:03.841194 [debug]: Started rendering analysis dbt_project_schema_l3.StoreRevenue
+16:35:03.841220 [info ]: Started model dbt_project_schema_l2.orders_stg
+16:35:03.841230 [debug]: Started rendering model dbt_project_schema_l2.orders_stg
+16:35:03.841245 [info ]: Started model dbt_project_schema_l2.orderitems_stg
+16:35:03.841251 [debug]: Started rendering model dbt_project_schema_l2.orderitems_stg
+16:35:03.871195 [debug]: Finished rendering [  0.03s] analysis dbt_project_schema_l3.StoreRevenue [success]
+16:35:03.871303 [debug]: Finished rendering [  0.03s] model dbt_project_schema_l2.orderitems_stg [success]
+16:35:03.871678 [info ]: Started analyzing (12 nodes)
+16:35:03.871732 [debug]: Started analyzing model dbt_project_schema_l2.orderitems_stg
+16:35:03.871783 [debug]: Finished rendering [  0.03s] model dbt_project_schema_l3.hook_test [success]
+16:35:03.871813 [debug]: Started analyzing model dbt_project_schema_l3.hook_test
+16:35:03.871840 [debug]: Finished rendering [  0.03s] model dbt_project_schema_l2.orders_stg [success]
+16:35:03.871852 [debug]: Started analyzing model dbt_project_schema_l2.orders_stg
+16:35:03.871867 [debug]: Finished rendering [  0.03s] model dbt_project_schema_l3.employees_stg [success]
+16:35:03.871877 [debug]: Started analyzing model dbt_project_schema_l3.employees_stg
+16:35:03.871892 [debug]: Finished rendering [  0.03s] model dbt_project_schema_l2.customers_stg [success]
+16:35:03.871906 [debug]: Started analyzing model dbt_project_schema_l2.customers_stg
+16:35:03.871921 [debug]: Finished rendering [  0.03s] model dbt_project_schema_l3.customerorder [success]
+16:35:03.871931 [debug]: Started analyzing model dbt_project_schema_l3.customerorder
+16:35:03.887047 [debug]: Started analyzing model dbt_project_schema_l3.orderitems_uniq
+16:35:03.898533 [debug]: Finished rendering [  0.06s] model dbt_project_schema_l3.orderitems_uniq [success]
+16:35:03.929259 [debug]: Finished rendering [  0.09s] seed dbt_project_schema_l3.salestargets [success]
+16:35:03.929327 [debug]: Started analyzing seed dbt_project_schema_l3.salestargets
+16:35:03.930418 [info ]:  Succeeded [  0.09s] seed  dbt_project_schema_l3.salestargets (table)
+16:35:03.930752 [debug]: Finished analyzing [  0.00s] seed dbt_project_schema_l3.salestargets [success]
+16:35:03.955911 [info ]:  Succeeded [  0.11s] model dbt_project_schema_l3.hook_test (view)
+16:35:03.955957 [debug]: Finished analyzing [  0.08s] model dbt_project_schema_l3.hook_test [success]
+16:35:03.956118 [info ]:  Succeeded [  0.11s] model dbt_project_schema_l2.orderitems_stg (view)
+16:35:03.956404 [debug]: Finished analyzing [  0.08s] model dbt_project_schema_l2.orderitems_stg [success]
+16:35:03.957428 [info ]:  Succeeded [  0.12s] model dbt_project_schema_l2.orders_stg (view)
+16:35:03.957477 [debug]: Finished analyzing [  0.09s] model dbt_project_schema_l2.orders_stg [success]
+16:35:03.957807 [info ]: Started model dbt_project_schema_l2.orders_fact
+16:35:03.957845 [debug]: Started rendering model dbt_project_schema_l2.orders_fact
+16:35:03.960926 [debug]: Started analyzing model dbt_project_schema_l2.orders_fact
+16:35:03.961147 [debug]: Finished rendering [  0.00s] model dbt_project_schema_l2.orders_fact [success]
+16:35:03.967143 [info ]:  Succeeded [  0.12s] model dbt_project_schema_l2.customers_stg (view)
+16:35:03.967195 [debug]: Finished analyzing [  0.10s] model dbt_project_schema_l2.customers_stg [success]
+16:35:03.968081 [info ]:  Succeeded [  0.13s] model dbt_project_schema_l3.employees_stg (view)
+16:35:03.968120 [debug]: Finished analyzing [  0.10s] model dbt_project_schema_l3.employees_stg [success]
+16:35:03.972961 [info ]:  Succeeded [  0.13s] model dbt_project_schema_l3.orderitems_uniq (view)
+16:35:03.973015 [debug]: Finished analyzing [  0.09s] model dbt_project_schema_l3.orderitems_uniq [success]
+16:35:03.980274 [info ]:  Succeeded [  0.02s] model dbt_project_schema_l2.orders_fact (table)
+16:35:03.980322 [debug]: Finished analyzing [  0.02s] model dbt_project_schema_l2.orders_fact [success]
+16:35:03.980351 [debug]: Started analyzing analysis dbt_project_schema_l3.StoreRevenue
+16:35:03.980394 [info ]: Started model dbt_project_schema_l3.storeperformance
+16:35:03.980407 [debug]: Started rendering model dbt_project_schema_l3.storeperformance
+16:35:03.980428 [info ]: Started model dbt_project_schema_l3.customerrevenue
+16:35:03.980441 [debug]: Started rendering model dbt_project_schema_l3.customerrevenue
+16:35:03.983158 [debug]: Finished rendering [  0.00s] model dbt_project_schema_l3.storeperformance [success]
+16:35:03.983260 [debug]: Started analyzing model dbt_project_schema_l3.storeperformance
+16:35:03.984693 [info ]:  Succeeded [  0.14s] model dbt_project_schema_l3.customerorder (table)
+16:35:03.984737 [debug]: Finished analyzing [  0.11s] model dbt_project_schema_l3.customerorder [success]
+16:35:03.986121 [debug]: Finished rendering [  0.01s] model dbt_project_schema_l3.customerrevenue [success]
+16:35:03.986155 [info ]: Finished rendering [  0.15s] (12 nodes, 0 skipped, 0 errors)
+16:35:03.986189 [debug]: Started analyzing model dbt_project_schema_l3.customerrevenue
+16:35:03.998465 [info ]:  Succeeded [  0.02s] model dbt_project_schema_l3.customerrevenue (table)
+16:35:03.998521 [debug]: Finished analyzing [  0.01s] model dbt_project_schema_l3.customerrevenue [success]
+16:35:04.000678 [info ]:  Succeeded [  0.02s] model dbt_project_schema_l3.storeperformance (view)
+16:35:04.000740 [debug]: Finished analyzing [  0.02s] model dbt_project_schema_l3.storeperformance [success]
+16:35:04.000774 [info ]:  Succeeded [  0.05s] analysis dbt_project_schema_l3.StoreRevenue (analysis)
+16:35:04.000799 [debug]: Finished analyzing [  0.02s] analysis dbt_project_schema_l3.StoreRevenue [success]
+16:35:04.000813 [info ]: Finished analyzing [  0.13s] (12 nodes, 0 skipped, 0 errors)
+16:35:04.025847 [info ]: Cached model count updated: 10 models (accurate)
