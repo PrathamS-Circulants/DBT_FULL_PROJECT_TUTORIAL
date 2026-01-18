@@ -14790,3 +14790,87 @@ parsing.
 [0m18:31:31.044177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F3CEF490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F3CEEF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267F5082990>]}
 [0m18:31:31.044723 [debug] [MainThread]: Flushing usage events
 [0m18:31:32.419306 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:00:55.686405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BA660AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249B82D0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BB78FD90>]}
+
+
+============================== 19:00:55.701509 | 1b7c432e-cc54-4583-8310-8f0ae4406eff ==============================
+[0m19:00:55.701509 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:00:55.703506 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\PrathamSingh\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt ', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'd:\\Github\\DBT_FULL_PROJECT_TUTORIAL\\logs'}
+[0m19:00:56.256133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1b7c432e-cc54-4583-8310-8f0ae4406eff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BAAB9480>]}
+[0m19:00:56.587334 [debug] [MainThread]: Set downloads directory='C:\Users\PRATHA~1\AppData\Local\Temp\dbt-downloads-6sszc5e_'
+[0m19:00:56.588910 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:00:58.526025 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:00:58.530736 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:01:00.013776 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:01:00.035362 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m19:01:01.486454 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m19:01:01.494014 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_date` package is deprecated in favor of
+`godatadriven/dbt_date`. Please update your `packages.yml` configuration to use
+`godatadriven/dbt_date` instead.
+[0m19:01:01.496254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1b7c432e-cc54-4583-8310-8f0ae4406eff', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BC98A580>]}
+[0m19:01:01.504330 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:01:03.646290 [info ] [MainThread]: Installed from version 1.3.0
+[0m19:01:03.648045 [info ] [MainThread]: Updated version available: 1.3.3
+[0m19:01:03.650103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1b7c432e-cc54-4583-8310-8f0ae4406eff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BC93F150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BC93EE50>]}
+[0m19:01:03.650983 [info ] [MainThread]: Installing https://github.com/calogica/dbt-expectations.git
+[0m19:01:03.653055 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/calogica/dbt-expectations.git ec90e2ae5a16eb71b4bb9d571ecc6fc1"
+[0m19:01:07.204314 [debug] [MainThread]: STDOUT: "b''"
+[0m19:01:07.205695 [debug] [MainThread]: STDERR: "b"Cloning into 'ec90e2ae5a16eb71b4bb9d571ecc6fc1'...\n""
+[0m19:01:07.207729 [debug] [MainThread]: Pulling new dependency ec90e2ae5a16eb71b4bb9d571ecc6fc1.
+[0m19:01:07.209007 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m19:01:07.293026 [debug] [MainThread]: STDOUT: "b'db3dc81dada4bf987a3beee375978421568a240a\n'"
+[0m19:01:07.294570 [debug] [MainThread]: STDERR: "b''"
+[0m19:01:07.296247 [debug] [MainThread]: Checking out revision c7dc2af8e1bd00b24583bea88cd883b88b706aab.
+[0m19:01:07.297608 [debug] [MainThread]: Executing "git fetch origin --depth 1 c7dc2af8e1bd00b24583bea88cd883b88b706aab"
+[0m19:01:08.828940 [debug] [MainThread]: STDOUT: "b''"
+[0m19:01:08.830381 [debug] [MainThread]: STDERR: "b'From https://github.com/calogica/dbt-expectations\n * branch            c7dc2af8e1bd00b24583bea88cd883b88b706aab -> FETCH_HEAD\n'"
+[0m19:01:08.831865 [debug] [MainThread]: Executing "git reset --hard c7dc2af8e1bd00b24583bea88cd883b88b706aab"
+[0m19:01:09.638057 [debug] [MainThread]: STDOUT: "b'HEAD is now at c7dc2af Update CHANGELOG.md\n'"
+[0m19:01:09.639236 [debug] [MainThread]: STDERR: "b''"
+[0m19:01:09.640761 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m19:01:09.712020 [debug] [MainThread]: STDOUT: "b'c7dc2af8e1bd00b24583bea88cd883b88b706aab\n'"
+[0m19:01:09.713430 [debug] [MainThread]: STDERR: "b''"
+[0m19:01:09.714801 [debug] [MainThread]: Checked out at c7dc2af.
+[0m19:01:09.716061 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m19:01:09.798676 [debug] [MainThread]: STDOUT: "b'c7dc2af8e1bd00b24583bea88cd883b88b706aab\n'"
+[0m19:01:09.800002 [debug] [MainThread]: STDERR: "b''"
+[0m19:01:09.808872 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/calogica/dbt-expectations.git ec90e2ae5a16eb71b4bb9d571ecc6fc1"
+[0m19:01:09.878240 [debug] [MainThread]: STDOUT: "b''"
+[0m19:01:09.879374 [debug] [MainThread]: STDERR: "b"fatal: destination path 'ec90e2ae5a16eb71b4bb9d571ecc6fc1' already exists and is not an empty directory.\n""
+[0m19:01:09.880601 [debug] [MainThread]: command return code=128
+[0m19:01:09.883482 [debug] [MainThread]: Updating existing dependency ec90e2ae5a16eb71b4bb9d571ecc6fc1.
+[0m19:01:09.884530 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m19:01:09.967139 [debug] [MainThread]: STDOUT: "b'c7dc2af8e1bd00b24583bea88cd883b88b706aab\n'"
+[0m19:01:09.968443 [debug] [MainThread]: STDERR: "b''"
+[0m19:01:09.970102 [debug] [MainThread]: Checking out revision c7dc2af8e1bd00b24583bea88cd883b88b706aab.
+[0m19:01:09.971050 [debug] [MainThread]: Executing "git fetch origin --depth 1 c7dc2af8e1bd00b24583bea88cd883b88b706aab"
+[0m19:01:11.177764 [debug] [MainThread]: STDOUT: "b''"
+[0m19:01:11.178793 [debug] [MainThread]: STDERR: "b'From https://github.com/calogica/dbt-expectations\n * branch            c7dc2af8e1bd00b24583bea88cd883b88b706aab -> FETCH_HEAD\n'"
+[0m19:01:11.179966 [debug] [MainThread]: Executing "git reset --hard c7dc2af8e1bd00b24583bea88cd883b88b706aab"
+[0m19:01:11.363341 [debug] [MainThread]: STDOUT: "b'HEAD is now at c7dc2af Update CHANGELOG.md\n'"
+[0m19:01:11.364616 [debug] [MainThread]: STDERR: "b''"
+[0m19:01:11.366392 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m19:01:11.441448 [debug] [MainThread]: STDOUT: "b'c7dc2af8e1bd00b24583bea88cd883b88b706aab\n'"
+[0m19:01:11.442619 [debug] [MainThread]: STDERR: "b''"
+[0m19:01:11.444190 [debug] [MainThread]: Already at c7dc2af, nothing to do.
+[0m19:01:11.855892 [info ] [MainThread]: Installed from revision c7dc2af8e1bd00b24583bea88cd883b88b706aab
+[0m19:01:11.857809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1b7c432e-cc54-4583-8310-8f0ae4406eff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BC99DD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BC9BDFD0>]}
+[0m19:01:11.859492 [info ] [MainThread]: Installing calogica/dbt_date
+[0m19:01:13.712547 [info ] [MainThread]: Installed from version 0.10.1
+[0m19:01:13.714093 [info ] [MainThread]: Up to date!
+[0m19:01:13.715829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1b7c432e-cc54-4583-8310-8f0ae4406eff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BC9C58B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BB61B410>]}
+[0m19:01:13.717082 [info ] [MainThread]: 
+[0m19:01:13.717705 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m19:01:13.723479 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PackageRedirectDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:01:13.726406 [debug] [MainThread]: Command `cli deps` succeeded at 19:01:13.725914 after 18.46 seconds
+[0m19:01:13.727780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BB66F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BB66EF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249BC9EE990>]}
+[0m19:01:13.729168 [debug] [MainThread]: Flushing usage events
+[0m19:01:16.105190 [debug] [MainThread]: An error was encountered while trying to flush usage events
