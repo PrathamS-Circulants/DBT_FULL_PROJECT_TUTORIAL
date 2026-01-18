@@ -1,10 +1,7 @@
 
   create or replace   view dbt_project_db.dbt_project_schema_l3.employees_stg
   
-  
-  
-  
-  as (
+   as (
                  -- this is redundant, and does not need to be set explicitly
 
 SELECT

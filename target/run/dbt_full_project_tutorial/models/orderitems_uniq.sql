@@ -1,10 +1,7 @@
 
   create or replace   view dbt_project_db.dbt_project_schema_l3.orderitems_uniq
   
-  
-  
-  
-  as (
+   as (
     select *
     from dbt_project_db.dbt_project_schema_l1.orderitems
     qualify

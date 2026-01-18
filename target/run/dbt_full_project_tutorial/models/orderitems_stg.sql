@@ -1,10 +1,7 @@
 
   create or replace   view dbt_project_db.dbt_project_schema_l2.orderitems_stg
   
-  
-  
-  
-  as (
+   as (
     SELECT
     OrderItemID,
     OrderID,

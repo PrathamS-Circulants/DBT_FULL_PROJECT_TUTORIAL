@@ -1,15 +1,10 @@
-select
-      count(*) as failures,
-      count(*) != 0 as should_warn,
-      count(*) != 0 as should_error
-    from (
-      
+
     
     
 
 with child as (
     select OrderID as from_field
-    from dbt_project_db.dbt_project_schema_l2.orderitems_stg
+    from dbt_project_db.dbt_project_schema_l3.orderitems_uniq
     where OrderID is not null
 ),
 
@@ -28,6 +23,3 @@ left join parent
 where parent.to_field is null
 
 
-
-      
-    ) dbt_internal_test

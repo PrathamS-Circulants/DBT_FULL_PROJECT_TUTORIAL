@@ -1,0 +1,13 @@
+dbt_full_project_tutorial:
+  outputs:
+    dev:
+      account: KIDOWAH-XSB14208
+      database: dbt_project_db
+      password: Universe@312931#
+      role: dbt_project_role
+      schema: dbt_project_schema_l3
+      threads: 10
+      type: snowflake
+      user: PRATHAMS009
+      warehouse: dbt_project_wh
+  target: dev

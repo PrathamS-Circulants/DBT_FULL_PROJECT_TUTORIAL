@@ -2,11 +2,9 @@
   
     
 
-create or replace transient table dbt_project_db.dbt_project_schema_l3.customerorder
-    
-    
-    
-    as (
+        create or replace transient table dbt_project_db.dbt_project_schema_l3.customerorder
+         as
+        (
 
 with customerorder as (
     select
@@ -23,8 +21,6 @@ with customerorder as (
     order by ordercount desc
 )
 select customerid,customername,ordercount from customerorder
-    )
-;
-
-
+        );
+      
   

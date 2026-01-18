@@ -9,7 +9,7 @@ select
 
 with child as (
     select OrderID as from_field
-    from dbt_project_db.dbt_project_schema_l2.orderitems_stg
+    from dbt_project_db.dbt_project_schema_l3.orderitems_uniq
     where OrderID is not null
 ),
 

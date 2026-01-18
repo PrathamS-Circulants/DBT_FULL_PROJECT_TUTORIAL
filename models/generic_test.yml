@@ -28,8 +28,7 @@ models:
         description: "{{ doc('StatusCD') }}"    
         tests:
           - accepted_values:
-              arguments:
-                values: ['01', '02', '03']
+              values: ['01', '02', '03']
 
   - name: orderitems_stg
     description: Staged order items data from order management system (oms), with minor row-level transformations.   
@@ -37,20 +36,26 @@ models:
       - name: OrderID
         tests:
           - relationships:
-              arguments:
-                to: ref('orders_stg')
-                field: OrderID
+              to: ref('orders_stg')
+              field: OrderID
 
+              # arguments:
+              #   to: ref('orders_stg')
+              #   field: OrderID
+
+  - name: orderitems_uniq   
+    columns:
+      - name: OrderID
+        tests:
+          - relationships:
+              to: ref('orders_stg')
+              field: OrderID
+        
   # - name: orderitems_uniq
   #   tests:
   #     - dbt_expectations.expect_table_row_count_to_equal_other_table:
   #         arguments:
   #           compare_model: ref("orders_stg")
-  - name: orderitems_uniq
-    tests:
-      - dbt_expectations.expect_table_row_count_to_equal_other_table:
-          arguments:
-            compare_model: ref("orders_stg")
           # group_by: [col1, col2] # (Optional)
           # compare_group_by: [col1, col2] # (Optional)
           # factor: 1 # (Optional)

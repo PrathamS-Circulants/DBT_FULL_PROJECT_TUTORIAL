@@ -1,10 +1,7 @@
 
   create or replace   view dbt_project_db.dbt_project_schema_l3.storeperformance
   
-  
-  
-  
-  as (
+   as (
     SELECT
     OS.StoreID,
     SUM(OFACT.Revenue) AS ActualSales,

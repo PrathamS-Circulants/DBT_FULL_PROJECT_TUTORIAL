@@ -1,12 +1,9 @@
-
-    select
+select
       count(*) as failures,
       count(*) != 0 as should_warn,
       count(*) != 0 as should_error
     from (
-      
-    
-  -- Define the expected record counts for each table
+      -- Define the expected record counts for each table
 
 
 -- Test the count of records in each table
@@ -53,7 +50,5 @@
   WHERE (SELECT COUNT(*) FROM dbt_project_db.dbt_project_schema_l1.orders) < 200
   
 
-  
-  
       
     ) dbt_internal_test

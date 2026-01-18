@@ -2,11 +2,9 @@
   
     
 
-create or replace transient table dbt_project_db.dbt_project_schema_l2.orders_fact
-    
-    
-    
-    as (SELECT
+        create or replace transient table dbt_project_db.dbt_project_schema_l2.orders_fact
+         as
+        (SELECT
     O.OrderID,
     O.OrderDate,
     O.CustomerID,
@@ -31,8 +29,6 @@ GROUP BY
     O.StatusCD,
     O.StatusDesc,
     O.Updated_at
-    )
-;
-
-
+        );
+      
   
