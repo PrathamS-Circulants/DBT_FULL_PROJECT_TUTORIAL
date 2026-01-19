@@ -1,3 +1,3 @@
 SELECT OrderID
-FROM dbt_project_db.dbt_project_schema_l2.orders_fact
+FROM dbt_project_db.dbt_project_schema_l3_dbt_project_schema_l2.orders_fact
 WHERE Revenue < 0
