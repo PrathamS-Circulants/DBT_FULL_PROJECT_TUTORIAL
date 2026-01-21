@@ -1,0 +1,1 @@
+{{ test_string_not_empty(column_name="JobTitle", model=get_where_subquery(ref('employees_stg'))) }}

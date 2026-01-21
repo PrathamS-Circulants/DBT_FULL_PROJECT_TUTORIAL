@@ -1,0 +1,1 @@
+{{ dbt_expectations.test_expect_table_row_count_to_equal_other_table(compare_model=ref("orders_stg"), model=get_where_subquery(ref('orderitems_uniq'))) }}
